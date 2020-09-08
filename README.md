@@ -7,3 +7,7 @@ some script for practice python
 
 ### /Bulls and Cows 
 Tkinter 練習，實作Bulls and Cows(1A2B)小遊戲，採用4位數首位能為0的規則
+
+### /PDF
+Tkinter +PyPDF2 練習 
+把要合併PDF放在同一個資料夾
