@@ -1,35 +1,46 @@
-https://numpy.org/
-https://www.runoob.com/numpy/numpy-tutorial.html
-===================================================
-Ndarray
+[Numpy](https://numpy.org/)  
+[Runoob-numpy-tutorial](https://www.runoob.com/numpy/numpy-tutorial.html)
+***
+### Ndarray  
+```
 numpy.array(object, dtype = None, copy = True, order = None, subok = False, ndmin = 0)
+```  
 
-數據類型對象(dtype)
+### 數據類型對象(dtype)
 用來描述與數據對應的內存運用
+```
 numpy.dtype(object, align, copy)
-
-基本屬性
-ndarray.ndim 返回維度數
-ndarray.shape 行列數 
-ndarray.size 元素總個數，shape 中n*m 的值
-ndarray.dtype 元素類型
-ndarray.itemsize 每個元素的大小
-ndarray.flags 返回內存信息
---------------------------------------------------------------
-創建數組
-創建指定形狀未初始化數組
+```  
+### 基本屬性
+ndarray.ndim 返回維度數  
+ndarray.shape 行列數  
+ndarray.size 元素總個數，shape 中n*m 的值  
+ndarray.dtype 元素類型  
+ndarray.itemsize 每個元素的大小  
+ndarray.flags 返回內存信息  
+***  
+### 創建數組
+創建指定形狀未初始化數組  
+```
 numpy.empty(shape, dtype = float, order = 'C')
-創建指定大小數組，以0填充元素
+```  
+創建指定大小數組，以0填充元素  
+```
 numpy.zeros(shape, dtype = float, order = 'C')
-創建指定大小數組，以1填充元素
+```  
+創建指定大小數組，以1填充元素  
+```
 numpy.ones(shape, dtype = None, order = 'C')
-
-從已有數組創建數組
+```  
+從已有數組創建數組  
+```
 numpy.asarray(a, dtype = None, order = None)
-
-實現動態數組，接受buffer 輸入參數
+```  
+實現動態數組，接受buffer 輸入參數  
+```
 numpy.frombuffer(buffer, dtype = float, count = -1, offset = 0)
-*buffer 是字符串時，Python3默認str是Unicode類型，所以要轉成bytestring要在str前加上b
+```  
+*buffer 是字符串時，Python3默認str是Unicode類型，所以要轉成bytestring要在str前加上b*
 
 從iterable物件建立ndarray物件，返回一維數組
 numpy.fromiter(iterable, dtype, count=-1)
